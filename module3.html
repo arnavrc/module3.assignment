@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Users/arnavroychoudhury/Documents/Assignment HTML CSS JAVASCRIPT/Assignment 3a/module3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Module3</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="primary-icon">Food, LLC</div>
+        <ul class="nav-list" id="nav-list">
+            <li class="list-item"><a href="#">Menu</a></li>
+            <li class="list-item"><a href="#">About</a></li>
+            <li class="list-item"><a href="#">Our Service</a></li>
+        </ul>
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+    <h1>Our Menu</h1>
+
+    <div class="row">
+        <div class="abc def ghi">
+            <div class="main">
+                <span id="Chicken">Chicken</span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            </div>
+        </div>
+        <div class="abc def ghi">
+            <div class="main">
+                <span id="Panner">Paneer</span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            </div>
+        </div>
+        <div class="abc def1 ghi">
+            <div class="main">
+                <span id="Salad">Salad</span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const toggleButton = document.getElementById('toggle-button');
+    const naviList = document.getElementById('nav-list');
+    toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+    })
+</script>
+
+</html>

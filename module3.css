@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: grey;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'oxygen' sans-serif;
+}
+
+.primary-icon {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffc107;
+    text-shadow: 2px 2px 5px rgb(66, 47, 13);
+    margin-left: 15px;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-list .list-item {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: darkgray;
+}
+
+.menu {
+    display: none;
+}
+
+.menu-line {
+    width: 20px;
+    height: 3px;
+    margin-bottom: 4px;
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.row {
+    width: 100%;
+    height: auto;
+}
+
+.main {
+    background: #ccc;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    text-align: justify;
+    position: relative;
+}
+
+div>p {
+    margin-top: 30px;
+}
+
+span {
+    font-size: 20px;
+    font-weight: 600;
+    width: 30%;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    float: right;
+    top: 0;
+    right: 0;
+    margin: 0;
+    position: absolute;
+}
+
+#Chicken {
+    background: #FFA07A;
+}
+
+#Panner {
+    background: #BDB76B;
+}
+
+#Salad {
+    background: #87CEEB;
+}
+
+@media (min-width:1000px) {
+    .abc {
+        width: 33.33%;
+        float: left;
+    }
+}
+
+@media (min-width:760px) and (max-width:999px) {
+    .def {
+        width: 50%;
+        float: left;
+    }
+    .def1 {
+        width: 100%;
+        float: left;
+    }
+}
+
+@media all and (max-width: 759px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .nav-list .list-item {
+        display: block;
+        padding: 20px 10px;
+        border: 2px solid black;
+    }
+    .nav-list {
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+    }
+    .primary-icon {
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ffc107;
+        text-shadow: 2px 2px 5px rgb(66, 47, 13);
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .active {
+        display: block;
+    }
+    .ghi {
+        width: 100%;
+        float: left;
+    }
+}
